@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "LoveJS", "LoveJS\LoveJS.njsproj", "{65BAF284-174F-43D2-97F7-60814D3BF39C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65BAF284-174F-43D2-97F7-60814D3BF39C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65BAF284-174F-43D2-97F7-60814D3BF39C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65BAF284-174F-43D2-97F7-60814D3BF39C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65BAF284-174F-43D2-97F7-60814D3BF39C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39DD3806-C23C-4A99-9EA0-00E2277BAB04}
+	EndGlobalSection
+EndGlobal
