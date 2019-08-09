@@ -27,7 +27,12 @@ bld/
 [Oo]bj/
 [Ll]og/
 dist/
+# Nodejs modules
 node_modules/
+# Sqlite3 data base files
+*.db
+*.png
+log.txt
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
