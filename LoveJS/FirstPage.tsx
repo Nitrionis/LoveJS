@@ -47,7 +47,7 @@ export default class FirstPage extends React.Component<Props, State> {
         this.logoUpdateCount = 0;
         this.logoFinalText = "Как найти девушку?";
         setTimeout(() => {
-            this.inputTimer = setInterval(this.animateLogo, 200);
+            this.inputTimer = setInterval(this.animateLogo, 1/*200*/);
         }, 2000);
     }
     animateLogo = () => {
@@ -63,11 +63,11 @@ export default class FirstPage extends React.Component<Props, State> {
                         }
                     });
                     this.movePointerToSearchInput();
-                }, 2000);
-            }, 1000);
+                }, 1);
+            }, 1);
             return;
         }
-        this.setState({ logoText: this.logoFinalText.slice(0, this.logoUpdateCount) });
+        this.setState({ logoText: null /*this.logoFinalText.slice(0, this.logoUpdateCount)*/ });
     }
     movePointerToSearchInput = () => {
         let rect = this.searchInput.current.getBoundingClientRect();

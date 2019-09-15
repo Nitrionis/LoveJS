@@ -140,12 +140,14 @@ export default class SecondPage extends React.Component<SecondPageProps, SecondP
 
 interface PollProps { }
 interface PollState {
+    girlId: string,
     answers: Array<boolean>
 }
 class Poll extends React.Component<PollProps, PollState> {
     constructor(props) {
         super(props);
         this.state = {
+            girlId: window.location.href.split('?')[1],
             answers: [false, false, false, false]
         };
     }
@@ -221,15 +223,15 @@ class Poll extends React.Component<PollProps, PollState> {
     render() {
         return (
             <div>
-                {this.getQuestion("Вы свободны?", 0, (dataIndex, v) => {
-                    this.setState({
-                        answers: this.state.answers.map((value, i) => {
-                            if (i == dataIndex)
-                                return v;
-                            return value;
-                        })
-                    });
-                })}
+                {/*this.getQuestion("Вы свободны?", 0, (dataIndex, v) => {
+                //    this.setState({
+                //        answers: this.state.answers.map((value, i) => {
+                //            if (i == dataIndex)
+                //                return v;
+                //            return value;
+                //        })
+                //    });
+                */})}
                 {this.getSecondQuestion()}
                 {this.getMessage()}
             </div>
