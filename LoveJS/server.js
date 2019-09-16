@@ -18,8 +18,10 @@ const db = new sqlite3.Database('db.db', (err) => {
     });
 });
 
-const staticPath = path.join(__dirname, '/');
-app.use(express.static(staticPath));
+app.use(
+    express.static(path.join(__dirname, '/client')),
+    express.static(path.join(__dirname, '/dist'))
+);
 
 app.use(express.json()); // to support JSON-encoded bodies
 
